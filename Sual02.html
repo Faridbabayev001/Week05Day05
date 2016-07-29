@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+   <script type="text/javascript">
+   var qaliq1=0;
+   var qaliq2=0;
+      function ebob(a,b){
+         if(a>b){
+            if(a%b!=0){
+               qaliq1=a%b;
+               qaliq2=b%qaliq1;
+                  if(qaliq1%qaliq2==0){
+                     document.write(qaliq2);
+                  }
+            }else if(a%b==0){
+               document.write(b)
+            }
+
+         }else if(a<b){
+            if(a%b!=0){
+               qaliq1=b%a;
+               qaliq2=a%qaliq1;
+               if(qaliq1%qaliq2==0){
+                  document.write(qaliq2);
+               }
+            }else if(a%b==0){
+               document.write(a)
+            }
+         }
+      }
+      ebob(300,150)
+   </script>
+   </body>
+</html>
